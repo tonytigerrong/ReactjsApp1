@@ -13,7 +13,7 @@ class Wellcome extends Component{
     }
     render(){
         return ( <div>
-            <h1>Wellcome {this.props.name}, {this.state.message}</h1>
+            <h1>Wellcome Tag: {this.props.name}, {this.state.message}</h1>
             <button onClick={()=> this.changeState()}>change state</button>
             </div>);
     }

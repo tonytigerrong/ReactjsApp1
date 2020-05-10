@@ -4,12 +4,14 @@ import './App.css';
 import Greet from './components/Greet';
 import Wellcome from './components/Wellcome';
 import Hello from './components/Hello';
+import Counter from './components/Counter';
 function App() {
   return (
     <div className="App">
-      <Greet />
+      <Greet name="Tony" age="33" genre="male"/>
       <Wellcome name="Lily Rong"/>
       <Hello name="Tony Tiger Rong"/>
+      <Counter />
     </div>
   );
 }
