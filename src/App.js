@@ -11,6 +11,7 @@ import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
       <StyleSheet primary={true} />
       <Inline />
       <Form />
+      <LifeCycleA />
     </div>
   );
 }
