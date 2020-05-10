@@ -54,9 +54,10 @@ export class Counter extends Component {
         return (
             <div>
                Counter: {this.state.count}
-               <button onClick={()=>this.increment()}>increment</button>
                {/* arrow function will bind this keyword to function automatically */}
+               <button onClick={()=>this.increment()}>increment</button>
                <button onClick={()=>this.decrement()}>decrement</button>
+               {/* this keyword is undefined */}
                <button onClick={this.testThis1}>TestThisKeyword1</button>
                {/* have to use bind(this) to bind this keyword to the event hanlder function */}
                <button onClick={this.testThis2.bind(this)}>TestThisKeyword2</button>
