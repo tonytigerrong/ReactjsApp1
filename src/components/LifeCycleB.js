@@ -46,7 +46,13 @@ export default class LifeCycleB extends Component {
         return null;
     }
 
-    componentDidCatch(){
+    componentDidCatch(error,info){
         console.log("Life Cycle B componentDidCatch");
+    }
+    getDerivedStateFromError(error){
+
+    }
+    componentWillUnmount(){
+        return null;
     }
 }
