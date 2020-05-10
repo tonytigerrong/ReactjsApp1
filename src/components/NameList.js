@@ -13,28 +13,37 @@ export default class NameList extends Component {
     render() {
         const persons = [
             {
+                id: 1,
                 name: "tony",
                 age: 99,
                 job: "dev"
             },
             {
+                id:2,
                 name: "David",
                 age: 79,
                 job: "tester"
             },
             {
+                id:3,
                 name: "Phoiple",
                 age: 88,
                 job: "PO"
             }
     
         ];
-        const nameList = persons.map( person => <Person person={person}/>)
-        // const nameList = persons.map( person => <Person />)
+        const names = ["tony","david","lily","phiples"];
+        const nameList = persons.map( 
+            (person) =>  
+                <Person person={person}/>
+              
+            );
+        const nameL = names.map( (name,index) => <h2 key={index}>{index} - {name}</h2>);
         return (
 
             <div>
                 {nameList}
+                {nameL}
             </div>
         )
     }
