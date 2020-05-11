@@ -12,6 +12,7 @@ import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
       <Inline />
       <Form />
       <LifeCycleA />
+      <FragmentDemo />
     </div>
   );
 }
