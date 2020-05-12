@@ -20,6 +20,8 @@ import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
 import ErrorTest from './components/ErrorTest';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     // <div className="App">
@@ -48,8 +50,10 @@ function App() {
         <ErrorTest heroName="Tony" />
       </ErrorBoundary>
       <ErrorBoundary>
-        <ErrorTest heroName="T" />
+        <ErrorTest heroName="If heroName is 'T', will throw Error" />
       </ErrorBoundary>
+      <ClickCounter />
+      <HoverCounter />
     </div>
 
   );
