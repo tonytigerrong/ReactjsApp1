@@ -10,7 +10,7 @@ export default class RegComp extends Component {
     }
     
     render() {
-        console.log("Reg Comp ************");
+        console.log("Reg Comp Render");
         return (
             <div>
                 Reg coomponent {this.props.name}

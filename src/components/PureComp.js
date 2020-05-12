@@ -10,7 +10,8 @@ export default class PureComp extends PureComponent {
     }
 
     render() {
-        console.log("Pure Comp ************");
+        console.log("Pure Comp Render");
+        console.log("For (pure class component), perform shallow props&state comparision. won't re-render if no change");
         return (
             <div>
                 Pure Component {this.props.name}
