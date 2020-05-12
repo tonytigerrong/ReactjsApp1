@@ -18,7 +18,7 @@ export default class ParentComp extends Component {
             this.setState({
                 name:   this.state.name
             })
-        },2000);
+        },2000*10);
     }
     render() {
         console.log("*************Parent Comp ************");
