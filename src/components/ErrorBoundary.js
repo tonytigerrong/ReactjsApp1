@@ -10,11 +10,15 @@ export default class ErrorBoundary extends Component {
     }
     
     static getDerivedStateFromError(error){
-        console.log("error:::::::",error);
+        // console.log("error:::::::",error);
         return { hasError: true};
     }
+    componentDidCatch(error,info){
+        console.log(error)
+        console.log(info)
+    }
     render() {
-     console.log("this.state.hasError******",this.state.hasError);
+    //  console.log("this.state.hasError******",this.state.hasError);
             if(this.state.hasError){
                 return <h1> heroName can not T</h1>
             }

@@ -46,6 +46,8 @@ function App() {
       <FRParentInput />
       <ErrorBoundary>
         <ErrorTest heroName="Tony" />
+      </ErrorBoundary>
+      <ErrorBoundary>
         <ErrorTest heroName="T" />
       </ErrorBoundary>
     </div>
