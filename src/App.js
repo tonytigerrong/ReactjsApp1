@@ -18,31 +18,37 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
+import ErrorTest from './components/ErrorTest';
+import ErrorBoundary from './components/ErrorBoundary';
 function App() {
   return (
-    <div className="App">
-      <PortalDemo />
-    </div>
     // <div className="App">
-    //   <Greet name="Tony" age="33" genre="male"/>
-    //   <Wellcome name="Lily Rong"/>
-    //   <Hello name="Tony Tiger Rong"/>
-      
-    //   <Counter />
-    //   <ParentComponent />
-    //   <UserGreeting />
-
-    //   <NameList />
-    //   <StyleSheet primary={true} />
-    //   <Inline />
-    //   <Form />
-    //   <LifeCycleA />
-    //   <FragmentDemo />
-    //   <ParentComp />
-    //   <RefsDemo />
-    //   <FocusInput />
-    //   <FRParentInput />
+    //   <PortalDemo />
     // </div>
+    <div className="App">
+      <Greet name="Tony" age="33" genre="male"/>
+      <Wellcome name="Lily Rong"/>
+      <Hello name="Tony Tiger Rong"/>
+      
+      <Counter />
+      <ParentComponent />
+      <UserGreeting />
+
+      <NameList />
+      <StyleSheet primary={true} />
+      <Inline />
+      <Form />
+      <LifeCycleA />
+      <FragmentDemo />
+      <ParentComp />
+      <RefsDemo />
+      <FocusInput />
+      <FRParentInput />
+      <ErrorBoundary>
+        <ErrorTest heroName="Tony" />
+        <ErrorTest heroName="T" />
+      </ErrorBoundary>
+    </div>
 
   );
 }
