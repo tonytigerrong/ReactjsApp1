@@ -22,6 +22,10 @@ import ErrorTest from './components/ErrorTest';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import BaseCounter from './components/BaseCounter';
 function App() {
   return (
     // <div className="App">
@@ -54,6 +58,13 @@ function App() {
       </ErrorBoundary>
       <ClickCounter />
       <HoverCounter />
+
+      <ClickCounterTwo />
+      <HoverCounterTwo />
+      <User render={ (isLoggedIn) => isLoggedIn ? 'tonyrong': 'guest' }/>
+    
+      <BaseCounter render={ (count,incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}/>} />
+      <BaseCounter render={ (count,incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount}/>} />
     </div>
 
   );
