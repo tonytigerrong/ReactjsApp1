@@ -26,6 +26,8 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import BaseCounter from './components/BaseCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 function App() {
   return (
     // <div className="App">
@@ -65,6 +67,13 @@ function App() {
     
       <BaseCounter render={ (count,incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}/>} />
       <BaseCounter render={ (count,incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount}/>} />
+      {/* has to be 'value' to pass it to ComponentF */}
+      <UserProvider value="nameOfUserProvider">
+        <ComponentC name="TonyRong"/>
+      </UserProvider>
+      {/* remove UserProvider tag, pass props named by 'value' by React.createContext('value') */}
+      <ComponentC />
+      
     </div>
 
   );
