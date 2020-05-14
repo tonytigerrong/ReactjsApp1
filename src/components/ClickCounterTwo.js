@@ -2,25 +2,27 @@ import React, { Component } from 'react'
 
 export default class ClickCounterTwo extends Component {
 
-    constructor(props) {
-        super(props)
+    // constructor(props) {
+    //     super(props)
     
-        this.state = {
-             count: 0
-        }
-    }
-    incrementCount = () =>{
-        this.setState(prevState => {
-            return { count: prevState.count + 1}
-        })
-    }
+    //     this.state = {
+    //          count: 0
+    //     }
+    // }
+    // incrementCount = () =>{
+    //     this.setState(prevState => {
+    //         return { count: prevState.count + 1}
+    //     })
+    // }
 
     render() {
-        const { count } = this.state;
+        const { count,incrementCount } = this.props;
+        console.log("count",count);
+        console.log("incrementCount",incrementCount);
         return (
-            <div>
-                <button onClick={this.incrementCount}>click two {count} times</button>
-            </div>
+                // <button>click two count time</button>
+                <button onClick={incrementCount}>click two {count} times</button>
+            
         )
     }
 }

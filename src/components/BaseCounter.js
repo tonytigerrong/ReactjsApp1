@@ -16,7 +16,7 @@ export default class BaseCounter extends Component {
     render() {
         return (
             <div>
-                {this.props.render(this.state, this.incrementCount)}
+                {this.props.render(this.state.count, this.incrementCount)}
             </div>
         )
     }
