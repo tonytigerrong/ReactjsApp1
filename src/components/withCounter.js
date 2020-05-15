@@ -10,7 +10,7 @@ const UpdatedComponent = (OriginalComponent, incNum) => {
             }
         }
         incrementCount = () => {
-            console.log('increment')
+            //console.log('increment')
             this.setState( preState =>{
                 return { count: preState.count + incNum}
             })

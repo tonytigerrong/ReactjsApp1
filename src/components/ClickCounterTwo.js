@@ -17,8 +17,8 @@ export default class ClickCounterTwo extends Component {
 
     render() {
         const { count,incrementCount } = this.props;
-        console.log("count",count);
-        console.log("incrementCount",incrementCount);
+        //console.log("count",count);
+        //console.log("incrementCount",incrementCount);
         return (
                 // <button>click two count time</button>
                 <button onClick={incrementCount}>click two {count} times</button>

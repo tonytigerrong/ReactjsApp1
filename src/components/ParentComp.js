@@ -21,7 +21,7 @@ export default class ParentComp extends Component {
         },2000*100);
     }
     render() {
-        console.log("*************Parent Comp ************");
+        //console.log("*************Parent Comp ************");
         return (
             <div>Parent Component
                 <RegComp name={this.state.name} />
