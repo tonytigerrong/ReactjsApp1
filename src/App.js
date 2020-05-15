@@ -28,6 +28,8 @@ import User from './components/User';
 import BaseCounter from './components/BaseCounter';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 function App() {
   return (
     // <div className="App">
@@ -73,7 +75,8 @@ function App() {
       </UserProvider>
       {/* remove UserProvider tag, pass props named by 'value' by React.createContext('value') */}
       <ComponentC />
-      
+      <PostList />
+      <PostForm />
     </div>
 
   );
